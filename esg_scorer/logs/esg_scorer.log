@@ -1,0 +1,228 @@
+2026-04-16 13:15:18 | WARNING  | train | No GPU detected — training on CPU.  Consider reducing BATCH_SIZE and NUM_EPOCHS in config.py.
+2026-04-16 13:15:18 | INFO     | train | ======================================================================
+2026-04-16 13:15:18 | INFO     | train | ESG Report Authenticity Scorer — Training Pipeline
+2026-04-16 13:15:18 | INFO     | train | Base model : climatebert/distilroberta-base-climate-f
+2026-04-16 13:15:18 | INFO     | train | Device     : cpu
+2026-04-16 13:15:18 | INFO     | train | ======================================================================
+2026-04-16 13:15:18 | INFO     | train | Loaded 300 gold-labelled rows from C:\Users\aditi\OneDrive\Desktop\esg_scorer\data\gold_labels.csv.
+2026-04-16 13:15:19 | INFO     | train | Loaded 7680 auto-labelled rows from C:\Users\aditi\OneDrive\Desktop\esg_scorer\data\auto_labels.csv.
+2026-04-16 13:15:30 | WARNING  | inference | Fine-tuned model not found at C:\Users\aditi\OneDrive\Desktop\esg_scorer\models\climatebert-esg-scorer.  Loading base model 'climatebert/distilroberta-base-climate-f' — run train.py first for best results.
+2026-04-16 13:15:31 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 13:15:31 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-16 13:15:31 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-16 13:15:31 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 13:15:31 | WARNING  | huggingface_hub.utils._http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-16 13:15:31 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-16 13:15:31 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-16 13:15:32 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-16 13:15:32 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-16 13:15:32 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/vocab.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 13:15:32 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/vocab.json "HTTP/1.1 200 OK"
+2026-04-16 13:15:32 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/vocab.json "HTTP/1.1 200 OK"
+2026-04-16 13:15:33 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/merges.txt "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 13:15:33 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/merges.txt "HTTP/1.1 200 OK"
+2026-04-16 13:15:33 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/merges.txt "HTTP/1.1 200 OK"
+2026-04-16 13:15:33 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/tokenizer.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 13:15:33 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/tokenizer.json "HTTP/1.1 200 OK"
+2026-04-16 13:15:33 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/tokenizer.json "HTTP/1.1 200 OK"
+2026-04-16 13:15:34 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/added_tokens.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 13:15:34 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/added_tokens.json "HTTP/1.1 200 OK"
+2026-04-16 13:15:34 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/added_tokens.json "HTTP/1.1 200 OK"
+2026-04-16 13:15:34 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/special_tokens_map.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 13:15:34 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/special_tokens_map.json "HTTP/1.1 200 OK"
+2026-04-16 13:15:34 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/special_tokens_map.json "HTTP/1.1 200 OK"
+2026-04-16 13:15:35 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/chat_template.jinja "HTTP/1.1 404 Not Found"
+2026-04-16 13:15:35 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 13:15:35 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-16 13:15:36 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-04-16 13:15:36 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/xet-read-token/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318 "HTTP/1.1 200 OK"
+2026-04-16 13:16:30 | INFO     | inference | Inference on CPU.
+2026-04-16 13:50:20 | WARNING  | train | No GPU detected — training on CPU.  Consider reducing BATCH_SIZE and NUM_EPOCHS in config.py.
+2026-04-16 13:50:20 | INFO     | train | ======================================================================
+2026-04-16 13:50:20 | INFO     | train | ESG Report Authenticity Scorer — Training Pipeline
+2026-04-16 13:50:20 | INFO     | train | Base model : climatebert/distilroberta-base-climate-f
+2026-04-16 13:50:20 | INFO     | train | Device     : cpu
+2026-04-16 13:50:20 | INFO     | train | ======================================================================
+2026-04-16 13:50:20 | INFO     | train | Loaded 300 gold-labelled rows.
+2026-04-16 13:50:21 | INFO     | train | Loaded 4957 auto-labelled rows.
+2026-04-16 13:50:21 | INFO     | train | Final merged dataset: 5050 rows.
+2026-04-16 13:50:21 | INFO     | train | Split: 4292 train  |  758 validation  (stratified by label).
+2026-04-16 13:50:21 | INFO     | train | Loading tokenizer from 'climatebert/distilroberta-base-climate-f' …
+2026-04-16 13:50:22 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 13:50:22 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-16 13:50:22 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 13:50:22 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-16 13:50:22 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-16 13:50:23 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-16 13:50:26 | INFO     | train | Tokenisation complete.  Max seq length = 256.
+2026-04-16 13:50:26 | INFO     | train | Auto-computed class weights (balanced): SPECIFIC(0)=1.2138  VAGUE(1)=0.8502
+2026-04-16 13:50:26 | INFO     | train | Loading model from 'climatebert/distilroberta-base-climate-f' …
+2026-04-16 13:50:26 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 13:50:26 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-16 13:50:26 | INFO     | train | Model loaded.  Trainable parameters: 82,300,418
+2026-04-16 13:50:26 | INFO     | train | TrainingArguments set.  Effective batch size = 16.
+2026-04-16 13:55:02 | WARNING  | train | No GPU detected — training on CPU.  Consider reducing BATCH_SIZE and NUM_EPOCHS in config.py.
+2026-04-16 13:55:02 | INFO     | train | ======================================================================
+2026-04-16 13:55:02 | INFO     | train | ESG Report Authenticity Scorer — Training Pipeline
+2026-04-16 13:55:02 | INFO     | train | Base model : climatebert/distilroberta-base-climate-f
+2026-04-16 13:55:02 | INFO     | train | Device     : cpu
+2026-04-16 13:55:02 | INFO     | train | ======================================================================
+2026-04-16 13:55:02 | INFO     | train | Loaded 300 gold-labelled rows.
+2026-04-16 13:55:02 | INFO     | train | Loaded 4957 auto-labelled rows.
+2026-04-16 13:55:02 | INFO     | train | Final merged dataset: 5050 rows.
+2026-04-16 13:55:02 | INFO     | train | Split: 4292 train  |  758 validation  (stratified by label).
+2026-04-16 13:55:02 | INFO     | train | Loading tokenizer from 'climatebert/distilroberta-base-climate-f' …
+2026-04-16 13:55:03 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 13:55:03 | WARNING  | huggingface_hub.utils._http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-16 13:55:03 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-16 13:55:04 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 13:55:04 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-16 13:55:04 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-16 13:55:04 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-16 13:55:06 | INFO     | train | Tokenisation complete.  Max seq length = 256.
+2026-04-16 13:55:06 | INFO     | train | Auto-computed class weights (balanced): SPECIFIC(0)=1.2138  VAGUE(1)=0.8502
+2026-04-16 13:55:06 | INFO     | train | Loading model from 'climatebert/distilroberta-base-climate-f' …
+2026-04-16 13:55:07 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 13:55:07 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-16 13:55:07 | INFO     | train | Model loaded.  Trainable parameters: 82,300,418
+2026-04-16 13:55:07 | INFO     | train | TrainingArguments set.  Effective batch size = 16.
+2026-04-16 13:55:14 | INFO     | train | Starting training …
+2026-04-16 14:54:45 | INFO     | train | Confusion Matrix:
+[[302  10]
+ [ 85 361]]
+2026-04-16 14:54:45 | INFO     | train |   f1_macro             actual=0.8739  target=0.80  ✓ PASS
+2026-04-16 14:54:45 | INFO     | train |   precision            actual=0.8767  target=0.85  ✓ PASS
+2026-04-16 14:54:45 | INFO     | train |   auc_roc              actual=0.9611  target=0.85  ✓ PASS
+2026-04-16 14:54:45 | INFO     | train |   cohens_kappa         actual=0.7503  target=0.70  ✓ PASS
+2026-04-16 15:55:00 | INFO     | inference | Loading fine-tuned model from C:\Users\aditi\OneDrive\Desktop\esg_scorer\models\climatebert-esg-scorer …
+2026-04-16 15:56:14 | INFO     | inference | Loading fine-tuned model from C:\Users\aditi\OneDrive\Desktop\esg_scorer\models\climatebert-esg-scorer …
+2026-04-16 15:57:55 | INFO     | inference | Loading fine-tuned model from C:\Users\aditi\OneDrive\Desktop\esg_scorer\models\climatebert-esg-scorer …
+2026-04-16 15:59:05 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 15:59:05 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-16 15:59:06 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 15:59:06 | WARNING  | huggingface_hub.utils._http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-16 15:59:06 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-16 15:59:06 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-16 15:59:06 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-16 15:59:07 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/None/resolve/main/config.json "HTTP/1.1 401 Unauthorized"
+2026-04-16 16:00:02 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 16:00:03 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-16 16:00:03 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 16:00:03 | WARNING  | huggingface_hub.utils._http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-16 16:00:03 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-16 16:00:03 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-16 16:00:04 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-16 16:01:16 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 16:01:16 | WARNING  | huggingface_hub.utils._http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-16 16:01:16 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-16 16:01:16 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 16:01:16 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-16 16:01:16 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-16 16:01:17 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-16 16:02:07 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 16:02:07 | WARNING  | huggingface_hub.utils._http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-16 16:02:07 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-16 16:02:08 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 16:02:08 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-16 16:02:08 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-16 16:02:08 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-16 16:02:09 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 16:02:09 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-16 16:08:43 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 16:08:43 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-16 16:08:44 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 16:08:44 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-16 16:08:44 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-16 16:08:45 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-16 16:08:47 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 16:08:48 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-16 16:09:50 | INFO     | inference | Scoring 1 sentences …
+2026-04-16 16:09:51 | WARNING  | inference | No sentences found for pillar 'S'.  Assigning score 0.
+2026-04-16 16:09:51 | WARNING  | inference | No sentences found for pillar 'G'.  Assigning score 0.
+2026-04-16 16:13:04 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 16:13:04 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-16 16:13:05 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 16:13:05 | WARNING  | huggingface_hub.utils._http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-16 16:13:05 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-16 16:13:06 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-16 16:13:06 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-16 16:13:06 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 16:13:06 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-16 16:13:28 | INFO     | inference | Scoring 1 sentences …
+2026-04-16 16:13:28 | WARNING  | inference | No sentences found for pillar 'S'.  Assigning score 0.
+2026-04-16 16:13:28 | WARNING  | inference | No sentences found for pillar 'G'.  Assigning score 0.
+2026-04-16 16:14:37 | INFO     | inference | Scoring 3 sentences …
+2026-04-16 16:14:37 | WARNING  | inference | No sentences found for pillar 'G'.  Assigning score 0.
+2026-04-16 16:15:11 | INFO     | inference | Scoring 5 sentences …
+2026-04-16 16:19:54 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 16:19:54 | WARNING  | huggingface_hub.utils._http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-16 16:19:54 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-16 16:19:54 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 16:19:54 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-16 16:19:55 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-16 16:19:55 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-16 16:19:55 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 16:19:55 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-16 16:22:08 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 16:22:08 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-16 16:22:09 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 16:22:09 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-16 16:22:09 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-16 16:22:09 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-16 16:22:10 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 16:22:10 | WARNING  | huggingface_hub.utils._http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-16 16:22:10 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-16 16:22:54 | INFO     | inference | Scoring 114 sentences …
+2026-04-16 16:24:54 | INFO     | inference | Scoring 27 sentences …
+2026-04-16 16:27:00 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 16:27:00 | WARNING  | huggingface_hub.utils._http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-16 16:27:01 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-16 16:27:01 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 16:27:01 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-16 16:27:01 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-16 16:27:02 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-16 16:27:02 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 16:27:02 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-16 16:27:26 | INFO     | inference | Scoring 2122 sentences …
+2026-04-16 16:36:19 | INFO     | inference | Scoring 1696 sentences …
+2026-04-16 17:06:23 | INFO     | inference | Scoring 4652 sentences …
+2026-04-16 17:32:13 | INFO     | inference | Scoring 3 sentences …
+2026-04-16 17:32:13 | WARNING  | inference | No sentences found for pillar 'S'.  Assigning score 0.
+2026-04-16 17:33:45 | INFO     | inference | Scoring 3 sentences …
+2026-04-16 17:33:46 | WARNING  | inference | No sentences found for pillar 'G'.  Assigning score 0.
+2026-04-16 17:34:38 | INFO     | inference | Scoring 3 sentences …
+2026-04-16 19:17:29 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 19:17:29 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-16 19:17:29 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 19:17:29 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-16 19:17:29 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-16 19:17:29 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-16 19:17:30 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 19:17:30 | WARNING  | huggingface_hub.utils._http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-16 19:17:30 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-16 19:22:50 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 19:22:50 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-16 19:22:50 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 19:22:50 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-16 19:22:50 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-16 19:22:50 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-16 19:22:51 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 19:22:51 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-16 19:24:48 | INFO     | inference | Scoring 3 sentences …
+2026-04-16 19:27:37 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 19:27:37 | WARNING  | huggingface_hub.utils._http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-16 19:27:37 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-16 19:27:37 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 19:27:37 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-16 19:27:37 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-16 19:27:37 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-16 19:27:38 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 19:27:38 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-17 10:14:54 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-17 10:14:54 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
+2026-04-17 10:14:55 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-17 10:14:55 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-17 10:14:55 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-17 10:14:55 | INFO     | httpx | HTTP Request: GET https://huggingface.co/api/models/climatebert/distilroberta-base-climate-f/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-17 10:14:56 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/climatebert/distilroberta-base-climate-f/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-17 10:14:56 | INFO     | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/climatebert/distilroberta-base-climate-f/e7dd6bb67b16f5dbfb940f7b27ab89d2f289a318/config.json "HTTP/1.1 200 OK"
